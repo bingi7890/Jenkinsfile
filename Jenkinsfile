@@ -5,8 +5,10 @@ pipeline {
    }
    stages {
       stage('checkout') {
-         git branch: 'master',
-         url: 'git@github.com:bingi7890/jenkins.git'
+         steps {
+            git branch: 'master',
+            url: 'git@github.com:bingi7890/jenkins.git'
+         }
       }
    }
    stages {
