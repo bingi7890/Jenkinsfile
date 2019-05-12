@@ -6,8 +6,10 @@ pipeline {
    stages {
       stage('checkout') {
          steps {
-            git branch: 'master',
-            url: 'git@github.com:bingi7890/jenkins.git'
+            git branch: 'master'
+               credentialsId: 'my_cred_id',
+               url: 'git@github.com:bingi7890/jenkins.git'
+         
          }
       }
    }
