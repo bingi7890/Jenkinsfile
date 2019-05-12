@@ -4,7 +4,7 @@ pipeline {
       maven "maven"
    }
    stages {
-      stage{
+      stage('checkout') {
          git branch: 'master',
          url: 'git@github.com:bingi7890/jenkins.git'
       }
