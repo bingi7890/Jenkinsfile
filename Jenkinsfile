@@ -7,7 +7,6 @@ pipeline {
       stage('checkout') {
          steps {
             git branch: 'master'
-               credentialsId: 'my_cred_id',
                url: 'git@github.com:bingi7890/jenkins.git'
          
          }
