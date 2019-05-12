@@ -12,7 +12,7 @@ pipeline {
             
             url: 'git@github.com:bingi7890/jenkins.git'
 
-           #sh "ls -lat"
+          
          }
       }
      stages {
