@@ -8,11 +8,9 @@ pipeline {
          steps {
             git branch: 'master'
                url: 'https://github.com/bingi7890/jenkins.git'
-         
+            
          }
       }
-   }
-   stages {
       stage('Build') {
          steps {
             echo "Hello-World"
