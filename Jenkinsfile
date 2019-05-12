@@ -3,7 +3,7 @@ pipeline {
    tools{
       maven "maven"
    }
-   stages {
+   stage {
       stage('checkout') {
          steps {
             git branch: 'master',
@@ -11,7 +11,7 @@ pipeline {
          }
       }
    }
-   stages {
+   stage {
       stage('Build') {
          steps {
             echo "Hello-World"
