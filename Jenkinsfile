@@ -4,7 +4,7 @@ pipeline {
    tools{
       maven "maven" 
    }
-   stages{
+   stages {
       stage('Checkout external') {
          steps {
             git branch: 'master',
