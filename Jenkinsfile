@@ -12,13 +12,10 @@ pipeline {
                       
             url: 'https://github.com/bingi7890/jenkins.git'
          }
-          
       }
-   }
-   stage('Build') {
-      steps {
+      stage('Build') {
+         steps {
          echo "Hello-World"
       }
    }
-   
 }
